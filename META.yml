@@ -1,9 +1,11 @@
 ---
-abstract: 'Passing variables before running tests'
+abstract: 'Setting and Passing test variables.'
 author:
   - 'Toru Yamaguchi <zigorou@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.42
+  File::Path: 0
+  FindBin: 0
   Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.42
@@ -21,7 +23,12 @@ no_index:
     - xt
 requires:
   Filter::Util::Call: 0
+  Getopt::Long: 0
   Module::Install: 0
+  Module::Install::Base: 0
+  Term::ReadLine: 0
+  Term::UI: 0
+  Text::ASCIITable: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01_01
+version: 0.01_02
